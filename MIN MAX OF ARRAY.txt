@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+int maxof(int arr[], int size){
+    int max=arr[0];
+    for(int i=0;i<size;i++){
+        if(max<arr[i]){
+            max=arr[i];
+        }
+    }
+    return max;
+    
+}
+int minof(int arr[],int size){
+    int min=arr[0];
+    for(int i=0;i<size;i++){
+MIN=MIN(MIN,ARR[I]);
+OR        if(min>arr[i]){
+            min=arr[i];
+        }
+    }
+    return min;
+    
+}
+
+
+int main()
+{
+    int arr[5]={3,2,5,1,7};
+    int minimum= minof(arr,5);
+    int maximum =maxof(arr,5);
+    
+    cout<<"  minimum element is  "  <<minimum  <<"  end   maximum element is "<< maximum << endl;
+}
